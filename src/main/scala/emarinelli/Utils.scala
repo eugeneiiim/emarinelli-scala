@@ -9,7 +9,6 @@ object Utils {
     val x = todo
     val end = System.currentTimeMillis
 
-    val duration = end - start
     println(msg + " took " + (end - start) + " ms.")
 
     x
