@@ -13,4 +13,6 @@ object Utils {
 
     x
   }
+
+  def checkInterrupted = if (java.lang.Thread.interrupted) throw new InterruptedException
 }
