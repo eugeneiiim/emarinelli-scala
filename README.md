@@ -1,4 +1,4 @@
 emarinelli-scala
 ================
 
-Eugene's Scala Stuff
+Miscellaneous Scala utilities.
