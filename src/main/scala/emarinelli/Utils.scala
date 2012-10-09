@@ -17,4 +17,8 @@ object Utils {
   def checkInterrupted = if (java.lang.Thread.interrupted) throw new InterruptedException
 
   def todo[T]: T = throw new Exception("todo")
+
+  def callable[T](fn: => T) = new java.util.concurrent.Callable[T] {
+    override def call = fn
+  }
 }
