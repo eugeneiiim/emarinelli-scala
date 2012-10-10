@@ -2,14 +2,15 @@ package emarinelli
 
 object Utils {
   def timed[T](
-    msg : String,
-    todo : => T
+    msg: String,
+    todo: => T,
+    silent: Boolean = false
   ) = {
     val start = System.currentTimeMillis
     val x = todo
     val end = System.currentTimeMillis
 
-    println(msg + " took " + (end - start) + " ms.")
+    if (!silent) println(msg + " took " + (end - start) + " ms.")
 
     x
   }

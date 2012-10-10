@@ -2,7 +2,7 @@ name := "emarinelli-scala"
 
 organization := "emarinelli"
 
-version := "0.1.3"
+version := "0.1.4"
 
 scalaVersion := "2.9.1"
 
