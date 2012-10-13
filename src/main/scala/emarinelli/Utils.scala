@@ -22,4 +22,10 @@ object Utils {
   def callable[T](fn: => T) = new java.util.concurrent.Callable[T] {
     override def call = fn
   }
+
+  def writeToFile(filename : String, content : String) = {
+    val out = new java.io.BufferedWriter(new java.io.FileWriter(filename))
+    out.write(content)
+    out.close
+  }
 }
