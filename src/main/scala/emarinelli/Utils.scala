@@ -23,6 +23,10 @@ object Utils {
     override def call = fn
   }
 
+  def threadLocal[T](body: => T) = new ThreadLocal[T] {
+    override def initialValue = body
+  }
+
   def writeToFile(filename : String, content : String) = {
     val out = new java.io.BufferedWriter(new java.io.FileWriter(filename))
     out.write(content)
