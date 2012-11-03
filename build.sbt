@@ -4,7 +4,11 @@ organization := "emarinelli"
 
 version := "0.1.7"
 
-scalaVersion := "2.9.1"
+scalaVersion := "2.10.0-RC1"
+
+initialCommands := """
+  import emarinelli.Utils._
+"""
 
 publishTo <<= version { (v: String) =>
   val nexus = "http://mvn.compose.cc:8081/nexus/content/repositories"
