@@ -8,6 +8,7 @@ scalaVersion := "2.10.0-RC1"
 
 initialCommands := """
   import emarinelli.Utils._
+  import emarinelli.Shortcuts._
 """
 
 publishTo <<= version { (v: String) =>
